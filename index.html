@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Apa Atuh Akumah, CHUAKS!</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header style="border-bottom: 1px solid black">
+      <navbar class="container">
+        <div class="navbar">
+          <img class="logo" src="img/gambar.png" alt="" />
+          <div class="menu">
+            <a class="menu-item" href="#home">Home</a>
+            <a class="menu-item" href="#our-package">Our Package</a>
+            <a class="menu-item" href="#call-us">Call Us</a>
+          </div>
+        </div>
+      </navbar>
+    </header>
+    <!-- main -->
+    <main>
+      <section id="hero">
+        <div class="container">
+          <div class="hero-title">
+            <h1>Your Trusted Travel Agent's</h1>
+            <h6>Your happiness is our happiness</h6>
+          </div>
+        </div>
+      </section>
+      <section id="about-contact">
+        <div class="container">
+          <div class="about-contact">
+            <div class="about">
+              <div class="banner">
+                <img class="about-img" src="img/1.jpg" alt="" />
+                <img class="about-img" src="img/2.jpg" alt="" />
+                <img class="about-img" src="img/3.jpg" alt="" />
+              </div>
+              <div class="about-content">
+                <div class="content-caption">
+                  <p>"Liburan menjadi menyenangkan bersama Travel Agentku"</p>
+                </div>
+                <div class="content-person">
+                  <img src="img/user.jpg" alt="" />
+                  <div class="person-info">
+                    <h6>Syahrul Fathurrahman Erawan</h6>
+                    <p>Mahasiswa</p>
+                  </div>
+                </div>
+              </div>
+              <hr class="border" />
+              <div class="about-information">
+                <h6 class="information-tittle">
+                  Use this space to provide users with more information about
+                  your offer. Consider it a follow-up to your headline and
+                  explain the benefits of your service or product
+                </h6>
+                <ul class="information-list">
+                  <li>
+                    <div class="list-number">1</div>
+                    <p class="list-paragraf">
+                      Your first feature, written in the form of benefit
+                      statement
+                    </p>
+                  </li>
+                  <li>
+                    <div class="list-number">2</div>
+                    <p class="list-paragraf">
+                      Your first feature, written in the form of benefit
+                      statement
+                    </p>
+                  </li>
+                  <li>
+                    <div class="list-number">3</div>
+                    <p class="list-paragraf">
+                      Your first feature, written in the form of benefit
+                      statement
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="contact-card">
+                <div class="card-tittle">
+                  <h4>Contact Us</h4>
+                  <p>
+                    Sales akan menghubungi anda 1x24 jam setelah data anda kami
+                    terima.
+                  </p>
+                </div>
+                <form id="contactForm" onsubmit="return validateForm()">
+                  <div class="input">
+                    <label for="">Your Name:</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="First and Last name"
+                      required
+                    />
+                  </div>
+                  <div class="input">
+                    <label for="">Email Address:</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Example@email.com"
+                      required
+                    />
+                  </div>
+                  <div class="input">
+                    <label for="select">What are you interested in?</label>
+                    <select name="select" id="select" required>
+                      <option value="">Select Option</option>
+                      <option value="A">A</option>
+                      <option value="B">B</option>
+                      <option value="C">C</option>
+                    </select>
+                  </div>
+                  <input class="submit" type="submit" value="SEND" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="our-package">
+        <div class="container-our-package">
+          <div class="our-package-tittle">
+            <h1>Our Package</h1>
+          </div>
+        </div>
+      </section>
+      <section id="world">
+        <div class="container">
+          <div class="world-row">
+            <div class="world-column">
+              <img
+                class="world-img"
+                src="http://placekitten.com/50/50"
+                alt=""
+              />
+              <div class="world-information">
+                <h2>Bali</h2>
+                <p>
+                  Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner
+                  yang menarik.
+                </p>
+              </div>
+            </div>
+            <div class="world-column">
+              <img
+                class="world-img"
+                src="http://placekitten.com/50/50"
+                alt=""
+              />
+              <div class="world-information">
+                <h2>Japan</h2>
+                <p>
+                  Travel dan wisata di japan. Kunjungi cagar budaya dan kuliner
+                  yang menarik.
+                </p>
+              </div>
+            </div>
+            <div class="world-column">
+              <img
+                class="world-img"
+                src="http://placekitten.com/50/50"
+                alt=""
+              />
+              <div class="world-information">
+                <h2>Singapore</h2>
+                <p>
+                  This description supports and extends the bullet point above.
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr class="border" />
+          <div class="world-row">
+            <div class="world-column">
+              <img
+                class="world-img"
+                src="http://placekitten.com/50/50"
+                alt=""
+              />
+              <div class="world-information">
+                <h2>Bandung</h2>
+                <p>
+                  This description supports and extends the bullet point above.
+                </p>
+              </div>
+            </div>
+            <div class="world-column">
+              <img
+                class="world-img"
+                src="http://placekitten.com/50/50"
+                alt=""
+              />
+              <div class="world-information">
+                <h2>Surabaya</h2>
+                <p>
+                  This description supports and extends the bullet point above.
+                </p>
+              </div>
+            </div>
+            <div class="world-column">
+              <img
+                class="world-img"
+                src="http://placekitten.com/50/50"
+                alt=""
+              />
+              <div class="world-information">
+                <h2>Third Feature</h2>
+                <p>
+                  This description supports and extends the bullet point above.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="closing"
+        style="border-top: 1px solid black; border-bottom: 1px solid black"
+      >
+        <div class="container">
+          <div class="closing-tittle">
+            <h1>Your Closing Argument Headline</h1>
+            <p>
+              Suspendisse egestas rhoncus urna in bibendum. Donec urna neque,
+              euismod sed justo quis, convallis tincidunt risus. phasellus
+              fringilla odio vel erat fringilla.
+            </p>
+            <a href="#about-contact">CALL TO ACTION</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <p>Terms of Service Privacy Policy</p>
+        <p>© 2019 Syahrul Fathurahman Erawan</p>
+      </div>
+    </footer>
+
+    <script>
+      //banner slider dengan 3 foto
+      var slideIndex = 0;
+      var slides = document
+        .getElementsByClassName("banner")[0]
+        .getElementsByTagName("img");
+
+      function showSlides() {
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].classList.remove("active");
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].classList.add("active");
+        setTimeout(showSlides, 5000); // Change image every 5 seconds
+      }
+      showSlides();
+
+      //form validasi contact us
+      function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var select = document.getElementById("select").value;
+
+        if (name.trim() === "" || email.trim() === "" || select.trim() === "") {
+          alert("Please fill in all fields");
+          return false;
+        }
+        alert("Thank you, your message has been sent!");
+        return true;
+      }
+
+      //navbar pindah section
+      window.addEventListener("hashchange", moveSections);
+
+      function moveSections() {
+        var currentHash = window.location.hash;
+
+        var homeSection = document.getElementById("home");
+        var ourPackageSection = document.getElementById("our-package");
+        var callUsSection = document.getElementById("call-us");
+        var currentPosition = homeSection.parentNode;
+
+        var newPosition;
+        switch (currentHash) {
+          case "#our-package":
+            newPosition = ourPackageSection.nextSibling;
+            break;
+          case "#call-us":
+            newPosition = callUsSection.nextSibling;
+            break;
+          default:
+            newPosition = null;
+            break;
+        }
+        currentPosition.insertBefore(homeSection, newPosition);
+        currentPosition.insertBefore(ourPackageSection, newPosition);
+        currentPosition.insertBefore(callUsSection, newPosition);
+      }
+      if (window.location.hash) {
+        moveSections();
+      }
+    </script>
+  </body>
+</html>

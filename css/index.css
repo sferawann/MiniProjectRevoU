@@ -1,0 +1,422 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+/* Desktop */
+header {
+  width: 100%;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.logo {
+  height: 100%;
+  width: 50px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.menu-item {
+  border: 1px solid black;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  row-gap: 40px;
+}
+.hero-title > h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.hero-title > h6 {
+  font-size: 25px;
+  color: gray;
+}
+.banner {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+.banner > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  /* height: 100%;
+  width: 450px; */
+}
+.banner > img.active {
+  opacity: 1;
+}
+.about {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.about-information {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+}
+.about-contact {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.contact {
+  width: 40%;
+}
+.content-person {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.content-person > img {
+  height: 100%;
+  width: 40px;
+}
+.person-info {
+  display: flex;
+  flex-direction: column;
+}
+.person-info > h6 {
+  font-weight: bold;
+}
+.person-info > p {
+  color: gray;
+  font-style: italic;
+  margin-top: 10px;
+}
+.content-caption > p {
+  color: gray;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.content-person > img {
+  border-radius: 50%;
+}
+.border {
+  border: 2px solid gray;
+  width: 100px;
+}
+.information-tittle {
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+.information-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.information-list > li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.list-number {
+  background-color: gray;
+  color: black;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.list-paragraf {
+  font-style: italic;
+  color: gray;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: rgba(123, 87, 106, 0.23);
+  padding: 58px;
+}
+.card-tittle > h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.card-tittle > p {
+  color: gray;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.input > input {
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 20px;
+  color: gray;
+}
+.input > select {
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 20px;
+  color: gray;
+}
+.submit {
+  border-radius: 4px;
+  background-color: #3a3a3a;
+  color: white;
+}
+.container-our-package {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  background-color: rgb(211, 211, 211);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.our-package-tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  row-gap: 40px;
+}
+.our-package-tittle > h1 {
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+}
+.world-row {
+  display: flex;
+  clear: both;
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+.world-column {
+  width: 100%;
+  float: left;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.world-information {
+  display: flex;
+  flex-direction: column;
+}
+.world-information > h2 {
+  font-weight: bold;
+}
+.world-information > p {
+  color: gray;
+  margin-top: 9px;
+  max-width: 260px;
+}
+.world-img {
+  border-radius: 50%;
+}
+.closing-tittle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  row-gap: 20px;
+}
+.closing-tittle > h1 {
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+}
+.closing-tittle > p {
+  font-size: 15px;
+  color: gray;
+  max-width: 485px;
+  text-align: center;
+  line-height: 1.3;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.closing-tittle > a {
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  text-decoration: none;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  row-gap: 20px;
+  line-height: 1.3;
+}
